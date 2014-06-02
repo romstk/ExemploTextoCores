@@ -1,0 +1,30 @@
+CORES 
+
+Arquivos
+
+cores.xml 
+
+Consta um resource com várias tgs color que define a cor de cada nome. Para utilizar em algum campo utiliza-se: 
+@color/nomedacor
+
+css.xml 
+
+Consta um resource com um style declarado com vários ítens configurados. Para utilizar em algum campo utiliza-se  :
+@style/nomedoestivlo
+
+
+Além desses arquivos auxiliares que foram criados, pois não são nativos do projeto, podemos contar com: 
+strings.xml
+dimens.xml
+styles.xml
+
+O arquivo styles.xml é aquele que aplica um estilo ao app e está declarado no AndroidManifest.xml dentro de: 
+
+<application
+...
+android:theme="@style/AppTheme">
+
+Este tema extende um tema nativo do android e para alterá-lo basta ir no arquivo styles.xml no tema e acrescentar algo. 
+
+Por exemplo um arquivo de plano de fundo como: 
+item name="android:windowBackground">@drawable/ic_launcher</item> 
